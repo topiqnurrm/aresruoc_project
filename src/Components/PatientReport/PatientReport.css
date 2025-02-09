@@ -1,0 +1,36 @@
+h2{
+    text-align: left;
+}
+
+table {
+    border-spacing: 10px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+thead{
+    background-color: #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+tbody>tr{
+    /* background-color: blueviolet; */
+    border-bottom: 2px solid #ddd;
+}
+
+th{
+    width: 180px;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: lightblue;
+  }
+  
+  tbody > tr:hover {
+    background-color: lightgray;
+  }
+
+.reports{
+    margin-top: 100px;
+}

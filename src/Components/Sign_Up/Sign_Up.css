@@ -1,0 +1,119 @@
+/* Styles for the container element */
+.container {
+    max-width: 900px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 40px; /* Add padding inside the container */
+    margin-top: 10%; /* Set top margin as a percentage of the viewport height */
+    overflow: hidden; /* Hide any overflowing content */
+    background-color: #f9f9f9; /* Set background color for the container */
+    border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+/* Styles for the password visibility icon */
+.password-visibility {
+    position: relative; /* Set the position relative to its normal position */
+    top: -39px; /* Move the element 39 pixels up */
+    left: 92%; /* Move the element 92% to the right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 17px; /* Set font size */
+}
+
+/* Styles for the grid layout of the signup form */
+.signup-grid {
+    display: grid; /* Use grid layout for the element */
+    grid-template-columns: 0.1fr 1.5fr 8fr; /* Define columns with fractional widths */
+    grid-gap: 10px; /* Set the gap between grid items */
+}
+
+/* Styles for the main signup text */
+.signup-text {
+    margin-top: 30px; /* Add top margin */
+    grid-column: 1 / 4; /* Span across all three columns */
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for additional signup text */
+.signup-text1 {
+    grid-column: -1 / 3; /* Span from second to third column from the end */
+    text-align: right; /* Right-align text */
+}
+
+.signup-text1 span {
+    color: #3c79a7; /* Set text color */
+    font-weight: 600; /* Set font weight to bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for the signup form section */
+.signup-form {
+    grid-column: 2 / 4; /* Span from second to fourth column */
+}
+
+/* Styles for the overall signup container */
+.signup {
+    flex: 1; /* Use flexible layout to fill available space */
+    background-color: #fff; /* Set background color to white */
+    padding: 40px; /* Add padding inside the element */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow with opacity */
+}
+
+/* Styles for the signup heading */
+.signup h1 {
+    margin-bottom: 20px; /* Add bottom margin to the heading */
+    text-align: center; /* Center-align text */
+    color: #3c79a7; /* Set text color */
+    letter-spacing: .1em; /* Add letter-spacing between characters */
+}
+
+/* Styles for the role text in signup */
+.signup-role {
+    font-size: 16px; /* Set font size */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Styles for form groups in the signup form */
+.form-group {
+    margin-bottom: 20px; /* Add bottom margin to form groups */
+}
+
+.form-group label {
+    display: block; /* Display labels as blocks */
+    margin-bottom: 5px; /* Add bottom margin to labels */
+    font-weight: bold; /* Set font weight to bold for labels */
+}
+
+/* Styles for form controls in the signup form */
+.form-control {
+    width: 40%; /* Set width of form controls */
+    padding: 8px; /* Add padding inside form controls */
+    font-size: 16px; /* Set font size */
+    border: 1px solid #ccc; /* Add border with color */
+    border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+/* Styles for button group in the signup form */
+.btn-group {
+    margin-top: .0001px; /* Add a small top margin to button group */
+    margin-bottom: 20px; /* Add bottom margin to button group */
+}
+
+/* Styles for buttons in the signup form */
+.btn {
+    padding: 10px 20px; /* Set padding for buttons */
+    font-size: 16px; /* Set font size for buttons */
+    border: none; /* Remove button borders */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for primary button in the signup form */
+.btn-primary {
+    background-color: #007bff; /* Set background color for primary button */
+    color: #fff; /* Set text color for primary button */
+}
+
+/* Styles for danger button in the signup form */
+.btn-danger {
+    background-color: #dc3545; /* Set background color for danger button */
+    color: #fff; /* Set text color for danger button */
+}
