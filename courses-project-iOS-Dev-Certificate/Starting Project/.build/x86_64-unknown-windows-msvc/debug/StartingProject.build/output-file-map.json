@@ -1,0 +1,65 @@
+{
+  "": {
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\master.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\LitttleLemonLogo.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LitttleLemonLogo.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LitttleLemonLogo.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LitttleLemonLogo~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LitttleLemonLogo.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\LocationsView.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LocationsView.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LocationsView.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LocationsView~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\LocationsView.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\MainView.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\MainView.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\MainView.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\MainView~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\MainView.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\Model.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Model.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Model.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Model~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Model.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\RESERVATION\\Reservation.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Reservation.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Reservation.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Reservation~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\Reservation.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\RESERVATION\\ReservationForm.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationForm.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationForm.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationForm~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationForm.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\RESERVATION\\ReservationView.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationView.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationView.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationView~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\ReservationView.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\RESTAURANT\\RestaurantLocation.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantLocation.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantLocation.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantLocation~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantLocation.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\RESTAURANT\\RestaurantView.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantView.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantView.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantView~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\RestaurantView.swiftdeps"
+  },
+  "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\Sources\\StartingProject\\StartingProject\\StartingProjectApp.swift": {
+    "dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\StartingProjectApp.d",
+    "object": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\StartingProjectApp.swift.o",
+    "swiftmodule": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\StartingProjectApp~partial.swiftmodule",
+    "swift-dependencies": "C:\\Users\\topiq\\Downloads\\New folder\\Starting Project\\.build\\x86_64-unknown-windows-msvc\\debug\\StartingProject.build\\StartingProjectApp.swiftdeps"
+  }
+}
