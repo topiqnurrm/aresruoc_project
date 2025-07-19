@@ -1,0 +1,234 @@
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    z-index: 999;
+    justify-content: flex-start; /* Memastikan elemen mulai dari atas */
+    align-items: flex-start; /* Mengubah dari center ke flex-start untuk alignment kiri */
+  }
+
+  .nav-links li {
+    width: 100%; /* Memastikan li mengisi lebar penuh container */
+    text-align: left; /* Mengubah dari center ke left untuk rata kiri */
+  }
+
+  .nav-links .nav-link {
+    justify-content: flex-start; /* Default: konten rata kiri */
+    width: 100%; /* Memastikan link mengisi lebar container */
+    padding: 0.8rem 1rem; /* Menambah padding vertikal untuk area sentuh lebih besar */
+  }
+
+  /* Khusus untuk user info dan notification btn */
+  .nav-links .nav-link.user-info,
+  .nav-links .notification-btn {
+    justify-content: center; /* Konten rata tengah khusus untuk elemen ini */
+    text-align: center;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .drawer-button {
+    display: block;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__tagline {
+    font-size: 1rem;
+  }
+
+  .story-item__actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .story-item__buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .brand span {
+    max-width: 120px; /* Membatasi lebar teks pada layar kecil */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-container {
+    padding: 0.5rem; /* Kurangi padding pada layar kecil */
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-form {
+    padding: 2rem 1.5rem;
+    margin-top: 8rem;
+    max-width: 100%;
+  }
+
+  .auth-form__title {
+    font-size: 1.8rem;
+  }
+
+  .form-control {
+    padding: 0.8rem;
+  }
+
+  .submit-button {
+    padding: 0.8rem;
+  }
+
+  .add-story {
+    padding: 6rem 1rem 2rem;
+  }
+
+  .navigation {
+    height: 60px; /* Mengurangi tinggi navigasi pada layar lebih kecil */
+  }
+
+  .nav-container {
+    padding: 0.25rem 0.5rem; /* Kurangi padding lebih jauh */
+  }
+}
+
+@media (max-width: 480px) {
+  .story-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .stories,
+  .story-detail,
+  .add-story {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .map-section {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .map-section__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .location-map,
+  #story-map,
+  #map {
+    height: 250px;
+  }
+
+  #map {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .story-popup {
+    max-width: 200px;
+  }
+
+  .story-popup h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .story-popup img {
+    display: block;
+    border-radius: 4px;
+  }
+
+  .story-popup .story-date {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0.25rem 0;
+  }
+
+  .story-popup .story-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .story-popup .story-link:hover {
+    background: #3367d6;
+  }
+
+  .brand-logo {
+    height: 30px; /* Perkecil logo pada layar sangat kecil */
+    min-width: 30px;
+  }
+
+  .brand {
+    font-size: 1rem; /* Perkecil font pada layar sangat kecil */
+  }
+
+  .navigation {
+    height: 55px; /* Semakin kecil pada layar sangat kecil */
+  }
+
+  .nav-links {
+    width: 85%; /* Menambah lebar untuk layar kecil */
+    padding: 1.5rem; /* Kurangi padding */
+  }
+
+  .nav-link {
+    padding: 0.7rem 0.5rem; /* Sesuaikan padding pada link navigasi */
+    font-size: 0.95rem; /* Sedikit kurangi ukuran font */
+  }
+
+  /* Tambahkan overlay saat menu terbuka untuk UX yang lebih baik */
+  .nav-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .nav-menu-overlay.active {
+    display: block;
+  }
+}
+
+/* Tambahkan media query untuk layar sangat kecil */
+@media (max-width: 375px) {
+  .brand span {
+    max-width: 90px; /* Batasi lebar teks lebih ketat */
+  }
+
+  .brand-logo {
+    height: 25px; /* Perkecil logo lagi */
+    min-width: 25px;
+  }
+
+  .navigation {
+    height: 50px; /* Semakin kecil */
+  }
+}

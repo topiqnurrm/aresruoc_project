@@ -1,0 +1,44 @@
+{
+    "name": "SPA Project",
+    "short_name": "SPAProject",
+    "description": "share lock i'll come there",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a90e2",
+    "icons": [
+      {
+        "src": "/images/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/screenshots/desktop.png",
+        "sizes": "1348x645",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/screenshots/mobile.png",
+        "sizes": "335x605",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Add New Story",
+        "short_name": "Add Story",
+        "description": "Create and share a new story",
+        "url": "/add-story",
+        "icons": [{ "src": "/images/add-icon.png", "sizes": "192x192" }]
+      }
+    ]
+  }

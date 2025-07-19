@@ -1,0 +1,129 @@
+/* Bookmark button styles */
+.bookmark-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.bookmark-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.bookmark-button i {
+  font-size: 1.1rem;
+}
+
+/* Bookmarks page styles */
+.bookmarks-page {
+  padding: 6rem 1rem 4rem; /* Increased top padding to account for navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  position: relative;
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.bookmarks-container {
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Styling untuk menampilkan story cards dalam grid di halaman bookmark */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  min-height: 300px; /* Memberikan tinggi minimum */
+}
+
+/* Ketika kosong, story-grid perlu menampung elemen no-bookmarks di tengah */
+story-list.story-grid:empty {
+  display: grid;
+  place-items: center; /* Untuk penyelarasan horizontal dan vertikal */
+}
+
+.no-bookmarks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: auto; /* Menggunakan margin auto untuk memposisikan di tengah */
+  grid-column: 1 / -1; /* Membuat elemen memenuhi seluruh grid */
+  max-width: 600px;
+  width: 100%;
+}
+
+.no-bookmarks .empty-icon {
+  font-size: 4rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.no-bookmarks p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Story detail actions */
+.story-detail__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+/* Story card action buttons */
+.story-item__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.story-item__buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.explore__button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.explore__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries */

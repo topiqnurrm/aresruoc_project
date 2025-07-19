@@ -1,0 +1,330 @@
+.stories {
+  padding: 0;
+}
+
+.stories__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--dark-color);
+}
+
+.story-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.story-item {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.story-item__bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.story-item__header {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3) 80%,
+    transparent
+  );
+  display: grid;
+  grid-template-columns: 1fr 0.2fr; /* 1fr untuk title+location, auto untuk bookmark */
+  grid-template-areas:
+    "title bookmark"
+    "location bookmark";
+}
+
+.story-item__title {
+  grid-area: title;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.bookmark-btn {
+  grid-area: bookmark;
+  justify-self: end;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.2s ease;
+}
+
+.bookmark-btn:hover {
+  transform: scale(1.2);
+}
+
+.bookmark-btn i.fas {
+  color: var(--primary-color);
+}
+
+.bookmark-btn i.far {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.story-item__location {
+  grid-area: location;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.story-item__location i {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+}
+
+.location-name {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.fa-map-marker-slash {
+  color: #aaa;
+}
+
+.fa-location-xmark {
+  color: #aaa;
+}
+
+.no-location-icon {
+  color: #aaa;
+  position: relative;
+}
+
+.no-location-icon::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.no-location-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #aaa;
+  transform: rotate(-45deg);
+}
+
+.story-item__footer {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.5) 80%,
+    transparent
+  );
+  color: white;
+}
+
+.story-item__description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.story-item__description {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.story-item__date {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.75rem;
+}
+
+.story-item__detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.story-item__detail-btn:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.story-item__detail-btn i {
+  margin-right: 4px;
+}
+
+.story-detail {
+  padding: 6rem 1rem 4rem;
+  background-color: var(
+    --light-color
+  ); /* Ubah dari merah ke warna latar yang sesuai */
+}
+
+.story-detail__container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: white; /* Ubah dari purple ke warna yang lebih sesuai */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.story-detail__header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Memberikan ruang antara judul dan tombol */
+  align-items: flex-start;
+  padding-bottom: 1rem;
+}
+
+.story-detail__title-area {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.story-detail__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.story-detail__title i {
+  color: var(--primary-color);
+}
+
+.story-detail__title .fa-user-secret {
+  color: #7a7a7a;
+}
+
+.bookmark-icon-button {
+  background: transparent;
+  border: none;
+  font-size: 2.5rem; /* Memperbesar ukuran font ikon */
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+
+.bookmark-icon-button:hover {
+  transform: scale(1.2);
+}
+
+.bookmark-icon-button i.fas {
+  color: var(--primary-color);
+}
+
+.bookmark-icon-button i.far {
+  color: #777;
+}
+
+.story-detail__meta {
+  display: flex;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+  width: 100%; /* Memastikan meta mengambil lebar penuh */
+  margin-top: 0.5rem;
+}
+
+.story-detail__content {
+  margin-bottom: 2rem;
+}
+
+.story-detail__image-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.story-detail__image {
+  max-width: 100%;
+  width: auto;
+  max-height: 25rem;
+  border-radius: var(--border-radius);
+  object-fit: contain;
+  box-shadow: var(--box-shadow);
+}
+
+.story-detail__description {
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.story-detail__map {
+  height: 400px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.no-location {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}

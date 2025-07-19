@@ -1,0 +1,141 @@
+.navigation {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+  overflow: visible; /* Ubah dari hidden ke visible agar dropdown menu bisa terlihat */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Memastikan nav-container berada di tengah */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: 1200px; /* Tetapkan max-width agar konsisten dengan container lain */
+  width: 100%;
+  margin: 0 auto; /* Tambahkan margin auto untuk memusatkan container */
+  height: 100%; /* Memastikan container mengikuti tinggi navigation */
+  box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap; /* Mencegah pemisahan teks */
+  overflow: hidden; /* Mencegah teks melebihi container */
+  text-overflow: ellipsis; /* Menambahkan elipsis jika teks terpotong */
+}
+
+.brand-logo {
+  height: 40px;
+  min-width: 40px; /* Memastikan logo tidak mengecil */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-weight: bold;
+  align-items: center; /* Menambahkan vertical alignment */
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link i {
+  font-size: 1.1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--light-color);
+  outline: none;
+}
+
+.drawer-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+
+.drawer-button:hover,
+.drawer-button:focus {
+  background-color: var(--light-color);
+  outline: none;
+}
+
+.user-info {
+  background-color: var(--primary-color);
+  color: white !important;
+  font-weight: bold;
+}
+
+.user-info:hover {
+  background-color: var(--primary-color-dark, #0056b3);
+}
+
+#logout-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+#logout-btn:hover {
+  background-color: var(--light-color);
+}
+
+#auth-links {
+  display: contents;
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  position: relative; /* Untuk penempatan garis di bawah */
+}
+
+/* Tambahkan garis di bawah link aktif */
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: width 0.3s ease;
+}

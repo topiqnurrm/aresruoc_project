@@ -1,0 +1,62 @@
+.map-section {
+  margin-top: 2rem;
+  background-color: white; /* Ubah dari red ke white */
+  overflow: hidden;
+}
+
+.map-section .section-content {
+  padding: 0.75rem;
+}
+
+.map-section__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#map {
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 800 !important;
+}
+
+.story-popup {
+  max-width: 250px;
+}
+
+.story-popup h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.story-popup img {
+  display: block;
+  border-radius: 4px;
+}
+
+.story-popup .story-date {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+.story-popup .story-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: #4285f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.story-popup .story-link:hover {
+  background: #3367d6;
+}

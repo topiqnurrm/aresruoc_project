@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimal tinggi viewport */
+}
+
+main {
+  flex: 1 0 auto; /* Memastikan main mengambil seluruh ruang yang tersedia */
+  padding-bottom: 2rem; /* Tambahkan ruang antara konten terakhir dan footer */
+}
+
+.footer {
+  flex-shrink: 0; /* Mencegah footer menyusut */
+  background-color: var(--secondary-color);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: auto; /* Alternatif untuk flex pada parent */
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
